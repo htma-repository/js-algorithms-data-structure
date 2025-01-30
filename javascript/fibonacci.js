@@ -1,11 +1,14 @@
 "use strict";
 function fibonacci(n) {
-    const num = [0, 1];
-    for (let i = 0; n > num.length; i++) {
-        const newNum = num[i] + num[i + 1];
-        num.push(newNum);
-    }
-    return num;
+  const numbers = [0, 1];
+
+  while (n > numbers.length) {
+    const nextNumber =
+      numbers[numbers.length - 1] + numbers[numbers.length - 2];
+    numbers.push(nextNumber);
+  }
+
+  return numbers;
 }
 console.log(fibonacci(2));
 console.log(fibonacci(3));

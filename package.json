@@ -2,7 +2,12 @@
   "name": "js-algorithms-data-structure",
   "version": "1.0.0",
   "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start-ts": "npx ts-node"
+  },
   "devDependencies": {
-    "typescript": "^4.9.3"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
   }
 }
