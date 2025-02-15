@@ -1,4 +1,4 @@
-import test from "node:test";
+import { test } from "bun:test";
 import assert from "node:assert";
 
 // function swap(arr, idx1, idx2) {
@@ -15,7 +15,6 @@ function bubbleSort(arr) {
   for (let i = result.length; i > 0; i--) {
     noSwap = true;
     for (let j = 0; j < i - 1; j++) {
-      console.log(result, result[j], result[j + 1]);
       if (result[j] > result[j + 1]) {
         let temp = result[j];
         result[j] = result[j + 1];
